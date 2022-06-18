@@ -62,6 +62,7 @@ final class BirdsServiceImpl: NSObject, BirdsService {
         outputStream.open()
         
         isOpen = true
+        send(message: "Connected")
     }
     
     private func stopSession() {
@@ -96,7 +97,7 @@ final class BirdsServiceImpl: NSObject, BirdsService {
     
     func getBirdInfo() {
         send(message: "cat")
-        if let imageData = UIImage(named: "Cat03")?.jpegData(compressionQuality: 1.0) {
+        if let imageData = UIImage(named: "Cat03")?.jpegData(compressionQuality: 0.001) {
             send(picture: imageData)
         }
         send(message: "endOfCat")
