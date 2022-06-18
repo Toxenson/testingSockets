@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		CE5768B6285DDEBA00EE3C95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5768B5285DDEBA00EE3C95 /* AppDelegate.swift */; };
 		CE5768B8285DDEBA00EE3C95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5768B7285DDEBA00EE3C95 /* SceneDelegate.swift */; };
-		CE5768BA285DDEBA00EE3C95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5768B9285DDEBA00EE3C95 /* ViewController.swift */; };
+		CE5768BA285DDEBA00EE3C95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5768B9285DDEBA00EE3C95 /* MainViewController.swift */; };
 		CE5768BD285DDEBA00EE3C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5768BB285DDEBA00EE3C95 /* Main.storyboard */; };
 		CE5768BF285DDEBB00EE3C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5768BE285DDEBB00EE3C95 /* Assets.xcassets */; };
 		CE5768C2285DDEBB00EE3C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5768C0285DDEBB00EE3C95 /* LaunchScreen.storyboard */; };
+		CE5768CD285DDF9A00EE3C95 /* BirdsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5768CC285DDF9A00EE3C95 /* BirdsPresenter.swift */; };
+		CE5768CF285DE19B00EE3C95 /* BirdsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5768CE285DE19B00EE3C95 /* BirdsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE5768B2285DDEBA00EE3C95 /* testingBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testingBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5768B5285DDEBA00EE3C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5768B7285DDEBA00EE3C95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE5768B9285DDEBA00EE3C95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE5768B9285DDEBA00EE3C95 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE5768BC285DDEBA00EE3C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5768BE285DDEBB00EE3C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5768C1285DDEBB00EE3C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5768C3285DDEBB00EE3C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5768CC285DDF9A00EE3C95 /* BirdsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsPresenter.swift; sourceTree = "<group>"; };
+		CE5768CE285DE19B00EE3C95 /* BirdsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		CE5768B4285DDEBA00EE3C95 /* testingBirds */ = {
 			isa = PBXGroup;
 			children = (
+				CE5768C9285DDEE100EE3C95 /* Controller */,
+				CE5768CB285DDEFA00EE3C95 /* Service */,
+				CE5768CA285DDEF100EE3C95 /* Presenter */,
 				CE5768B5285DDEBA00EE3C95 /* AppDelegate.swift */,
 				CE5768B7285DDEBA00EE3C95 /* SceneDelegate.swift */,
-				CE5768B9285DDEBA00EE3C95 /* ViewController.swift */,
 				CE5768BB285DDEBA00EE3C95 /* Main.storyboard */,
 				CE5768BE285DDEBB00EE3C95 /* Assets.xcassets */,
 				CE5768C0285DDEBB00EE3C95 /* LaunchScreen.storyboard */,
 				CE5768C3285DDEBB00EE3C95 /* Info.plist */,
 			);
 			path = testingBirds;
+			sourceTree = "<group>";
+		};
+		CE5768C9285DDEE100EE3C95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE5768B9285DDEBA00EE3C95 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE5768CA285DDEF100EE3C95 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE5768CC285DDF9A00EE3C95 /* BirdsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE5768CB285DDEFA00EE3C95 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE5768CE285DE19B00EE3C95 /* BirdsService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5768BA285DDEBA00EE3C95 /* ViewController.swift in Sources */,
+				CE5768CF285DE19B00EE3C95 /* BirdsService.swift in Sources */,
+				CE5768BA285DDEBA00EE3C95 /* MainViewController.swift in Sources */,
 				CE5768B6285DDEBA00EE3C95 /* AppDelegate.swift in Sources */,
 				CE5768B8285DDEBA00EE3C95 /* SceneDelegate.swift in Sources */,
+				CE5768CD285DDF9A00EE3C95 /* BirdsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
